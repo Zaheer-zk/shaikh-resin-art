@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shaikh Resin Art — Handmade Resin Creations & Workshops</title>
+  <meta name="description" content="Shaikh Resin Art — customized handmade resin keychains, nameplates, calligraphy, jewellery, pens & flower-preservation keepsakes. Learn resin art in our 5-day class." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ TOP NAV (brushed metal bar) ============ -->
+  <header class="topbar" id="top">
+    <div class="topbar-inner">
+      <a href="#top" class="brand">
+        <span class="brand-medallion">NS</span>
+        <span class="brand-text">
+          <span class="brand-name">Shaikh Resin Art</span>
+          <span class="brand-tag">Learn · Create · Earn</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#workshop">Workshop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-glass">
+      <p class="hero-kicker">Handmade with love &amp; resin</p>
+      <h1 class="hero-title">Turn your moments into<br><em>timeless resin art</em></h1>
+      <p class="hero-sub">
+        Customized keychains, nameplates, calligraphy, jewellery &amp; flower-preservation
+        keepsakes — each piece poured, set and finished by hand.
+      </p>
+      <div class="hero-actions">
+        <a href="#shop" class="btn btn-primary">Explore the Collection</a>
+        <a href="#workshop" class="btn btn-ghost">Join a Workshop</a>
+      </div>
+      <ul class="hero-badges">
+        <li><strong>100%</strong> Handmade</li>
+        <li><strong>Custom</strong> Orders</li>
+        <li><strong>5-Day</strong> Classes</li>
+      </ul>
+    </div>
+    <div class="hero-bubbles" aria-hidden="true"></div>
+  </section>
+
+  <!-- ============ SHOP ============ -->
+  <section class="section shop" id="shop">
+    <div class="section-head">
+      <span class="eyebrow">The Collection</span>
+      <h2 class="section-title">Resin Designs for Sale</h2>
+      <p class="section-lead">Every piece is customizable — names, colours, dates &amp; flowers of your choice. Tap any item for details &amp; to order.</p>
+    </div>
+
+    <!-- Filter chips -->
+    <div class="filters" id="filters">
+      <button class="chip is-active" data-filter="all">All</button>
+      <button class="chip" data-filter="keychains">Keychains</button>
+      <button class="chip" data-filter="nameplates">Nameplates</button>
+      <button class="chip" data-filter="calligraphy">Calligraphy</button>
+      <button class="chip" data-filter="jewellery">Jewellery</button>
+      <button class="chip" data-filter="pens">Pens</button>
+      <button class="chip" data-filter="keepsakes">Keepsakes</button>
+    </div>
+
+    <!-- Product grid (populated by JS) -->
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <!-- ============ WORKSHOP ============ -->
+  <section class="section workshop" id="workshop">
+    <div class="section-head">
+      <span class="eyebrow">Learn the Craft</span>
+      <h2 class="section-title">5-Day Resin Art Class</h2>
+      <p class="section-lead">From basics to advanced — make your own keychains, bookmarks, coasters &amp; preserved flowers. Limited seats each batch.</p>
+    </div>
+
+    <div class="workshop-wrap">
+      <figure class="pamphlet">
+        <img src="assets/img/workshop-pamphlet.jpeg" alt="Shaikh Resin Art — 5 Days Resin Class pamphlet" loading="lazy" />
+      </figure>
+
+      <div class="workshop-info">
+        <div class="ticket">
+          <div class="ticket-main">
+            <h3>What you'll learn</h3>
+            <ul class="ticked">
+              <li>Basic to advanced resin knowledge</li>
+              <li>Hands-on practical training</li>
+              <li>Tips &amp; tricks for a perfect glossy finish</li>
+              <li>Guidance for small business &amp; selling</li>
+              <li>Certificate of completion</li>
+            </ul>
+            <p class="ticket-projects">Projects: Keychain · Bookmark · Coaster · Flower Preserve</p>
+          </div>
+          <div class="ticket-stub">
+            <span class="stub-label">Class Fee</span>
+            <span class="stub-price">₹300<small>/-</small></span>
+            <span class="stub-note">Materials provided</span>
+          </div>
+        </div>
+
+        <div class="detail-pills">
+          <div class="pill"><span class="pill-k">Duration</span><span class="pill-v">5 Days</span></div>
+          <div class="pill"><span class="pill-k">Timing</span><span class="pill-v">Evening · 5–6 PM</span></div>
+          <div class="pill"><span class="pill-k">Starts</span><span class="pill-v">01 July 2026</span></div>
+          <div class="pill"><span class="pill-k">Seats</span><span class="pill-v">Limited</span></div>
+        </div>
+
+        <a class="btn btn-primary btn-wide" href="https://wa.me/918739830065?text=Hi%20Shaikh%20Resin%20Art!%20I%20want%20to%20book%20a%20seat%20in%20the%205-Day%20Resin%20Class." target="_blank" rel="noopener">
+          Book Your Seat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="about-card">
+      <div class="about-text">
+        <span class="eyebrow">Our Story</span>
+        <h2 class="section-title">Made by hand, kept forever</h2>
+        <p>
+          Shaikh Resin Art began with a simple love — capturing the things we never want to
+          fade. A wedding rose, a couple's initials, a verse close to the heart. We pour each
+          piece by hand, layer by layer, until light moves through it like glass.
+        </p>
+        <p>
+          From tiny letter keychains to preserved-flower keepsakes and Islamic calligraphy,
+          every creation is made to order and made to last. And if you'd rather create your
+          own — we'll teach you how.
+        </p>
+        <div class="about-stats">
+          <div><strong>20+</strong><span>Designs</span></div>
+          <div><strong>100%</strong><span>Customizable</span></div>
+          <div><strong>5-Day</strong><span>Workshops</span></div>
+        </div>
+      </div>
+      <div class="about-frame">
+        <img src="assets/img/calligraphy-round-blue.jpeg" alt="Shaikh Resin Art calligraphy piece" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="section-head">
+      <span class="eyebrow">Get in Touch</span>
+      <h2 class="section-title">Order or Ask Anything</h2>
+      <p class="section-lead">Tell us your idea — names, colours, dates — and we'll craft it for you.</p>
+    </div>
+
+    <div class="contact-wrap">
+      <!-- Contact cards -->
+      <div class="contact-cards">
+        <a class="contact-card" href="https://wa.me/918739830065" target="_blank" rel="noopener">
+          <span class="cc-icon">💬</span>
+          <span class="cc-k">WhatsApp / Call</span>
+          <span class="cc-v">+91 87398 30065</span>
+        </a>
+        <a class="contact-card" href="https://instagram.com/shaikh_resin_art1" target="_blank" rel="noopener">
+          <span class="cc-icon">📸</span>
+          <span class="cc-k">Instagram</span>
+          <span class="cc-v">@shaikh_resin_art1</span>
+        </a>
+        <div class="contact-card">
+          <span class="cc-icon">⏰</span>
+          <span class="cc-k">Class Timing</span>
+          <span class="cc-v">Evening · 5–6 PM</span>
+        </div>
+      </div>
+
+      <!-- Contact form (engraved plate) -->
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Aaru" required />
+        </div>
+        <div class="field">
+          <label for="order">What would you like?</label>
+          <textarea id="order" name="order" rows="4" placeholder="e.g. A heart name necklace 'Aaru' in red &amp; gold" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-wide">Send Enquiry via WhatsApp</button>
+        <p class="form-hint" id="formHint">We'll open WhatsApp with your message ready to send.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="brand-medallion sm">NS</span>
+      <p class="footer-name">Shaikh Resin Art</p>
+      <p class="footer-tag">Turn your creativity into beautiful handmade creations</p>
+      <div class="footer-links">
+        <a href="https://wa.me/918739830065" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://instagram.com/shaikh_resin_art1" target="_blank" rel="noopener">Instagram</a>
+        <a href="#shop">Shop</a>
+        <a href="#workshop">Workshop</a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Shaikh Resin Art · Handmade with love</p>
+      <p class="footer-credit">Made with <span class="credit-heart">❤</span> by
+        <a href="https://zaheer-zk.github.io/Advanced-porfolio/" target="_blank" rel="noopener">CodxMan</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="fab" href="https://wa.me/918739830065" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+
+  <!-- ============ PRODUCT DETAIL MODAL ============ -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <div class="modal-media"><img id="mImg" src="" alt="" /></div>
+      <div class="modal-body">
+        <span class="modal-cat" id="mCat"></span>
+        <h3 class="modal-title" id="mTitle"></h3>
+        <p class="modal-price" id="mPrice"></p>
+        <p class="modal-desc" id="mDesc"></p>
+        <ul class="modal-feats" id="mFeats"></ul>
+        <a class="btn btn-primary btn-wide" id="mOrder" href="#" target="_blank" rel="noopener">Order this on WhatsApp</a>
+        <p class="modal-note">Fully customizable — names, colours, dates &amp; flowers on request.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
